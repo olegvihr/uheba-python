@@ -19,6 +19,12 @@ def calculator(expression):
                 raise ValueError("Выражение должно содержать 2 числа и один оператор")
 
 def plus(a, b):
+    """
+    :param a:
+    :param b:
+    :return:
+    """
+
     return a + b
 
 
