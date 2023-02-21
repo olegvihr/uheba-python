@@ -1,8 +1,9 @@
 # function calculator with operators + - / *
+
 def calculator(expression):
     allowed = '+-/*'
     if not any(sign in expression for sign in allowed):
-        raise ValueError(f'Invalid expression ({allowed}')
+        raise ValueError(f'Invalid expression ({allowed})')
     for sign in allowed:
         if sign in expression:
             try:
@@ -17,5 +18,9 @@ def calculator(expression):
             except (ValueError, TypeError):
                 raise ValueError("Выражение должно содержать 2 числа и один оператор")
 
+def plus(a, b):
+    return a + b
+
+
 if __name__ == '__main__':
-    print(calculator('1 + 2'))
+    print(plus(10, 12))
