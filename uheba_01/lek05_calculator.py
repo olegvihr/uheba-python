@@ -3,7 +3,7 @@
 def calculator(expression):
     allowed = '+-/*'
     if not any(sign in expression for sign in allowed):
-        raise ValueError(f'Invalid expression ({allowed}')
+        raise ValueError(f'Invalid expression ({allowed})')
     for sign in allowed:
         if sign in expression:
             try:
