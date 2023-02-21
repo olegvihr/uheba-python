@@ -1,6 +1,6 @@
 import pytest
 
-from uheba_01.lek05_calculator import calculator, plus
+from uheba_01.lek04_calculator import calculator, plus
 
 
 def test_calk_plus():
