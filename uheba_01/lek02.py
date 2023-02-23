@@ -8,7 +8,6 @@ def get(value):
     return 'Zero'
 
 
-
 if __name__ == '__main__':
     k = 0
     for i in range(10):
@@ -16,4 +15,3 @@ if __name__ == '__main__':
 
     value = int(input())
     print(get(value).upper())
-

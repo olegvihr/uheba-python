@@ -18,6 +18,7 @@ def calculator(expression):
             except (ValueError, TypeError):
                 raise ValueError("Выражение должно содержать 2 числа и один оператор")
 
+
 def plus(a, b):
     """
     :param a:

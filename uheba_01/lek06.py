@@ -1,9 +1,11 @@
 from typing import List, Union, Optional
 
+
 def calc(x: Union[int, float], y: Union[int, float]) -> Union[int, float]:
     return x + y
 
-def to_int(a_list: List[str])->List[int]:
+
+def to_int(a_list: List[str]) -> List[int]:
     return [int(i) for i in a_list]
 
 

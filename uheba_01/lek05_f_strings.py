@@ -31,5 +31,4 @@ if __name__ == '__main__':
     print(f'{today:%Y-%m-%d  %H:%M:%S}')
     real = 86
     full = 100
-    print(f'{real/full:.2%}')
-
+    print(f'{real / full:.2%}')
