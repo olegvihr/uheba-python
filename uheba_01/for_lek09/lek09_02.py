@@ -1,0 +1,1 @@
+print(f'start module: {__name__}')
