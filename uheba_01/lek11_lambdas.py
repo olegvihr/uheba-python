@@ -55,3 +55,4 @@ if __name__ == "__main__":
     cats = [Cat('Tom', 2), Cat('Dymka', 3)]
     print(sorted(cats, key=lambda cat: cat.age))
     print(sorted(cats, key=attrgetter('age')))  # from operator import attrgetter, itemgetter
+
