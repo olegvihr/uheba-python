@@ -56,4 +56,4 @@ if __name__ == "__main__":
         res.action()
     # with open_resource(1,2,3) as res:
     #     res.action()
-    raise ValueError('Stop')
+    # raise ValueError('Stop')
