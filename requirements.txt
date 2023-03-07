@@ -1,15 +1,20 @@
+python-docx==0.8.11
 atomicwrites==1.4.1
 attrs==22.2.0
 colorama==0.4.6
-coverage==7.1.0
+coverage==7.2.1
 element==0.1
 iniconfig==2.0.0
 packaging==23.0
 pluggy==1.0.0
-py==1.11.0
 pyparsing==3.0.9
-pytest==7.2.1
+pytest~=7.2.2
 toml==0.10.2
+docxtpl==0.16.5
+python-pptx==0.6.21
+py==1.11.0
+XlsxWriter==3.0.8
+
 
 
 

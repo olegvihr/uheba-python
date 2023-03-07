@@ -17,15 +17,11 @@ import csv
 # неизменяемый, позволяет обращаться по имени атрибута, позволяет использовать индексы.
 
 
-
 Point = namedtuple('Point', 'x y')
 with open('points.csv') as file:
     for line in csv.reader(file):
         point = Point._make(line)
         print(point)
-
-
-
 
 # # tom = ('Tom', 4, 'yellow')
 #
@@ -52,7 +48,6 @@ with open('points.csv') as file:
 # print(a_deque)
 # a_deque.appendleft(2)
 # print(a_deque)
-
 
 
 # counter = Counter('Hello')
