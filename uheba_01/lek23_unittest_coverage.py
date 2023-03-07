@@ -22,4 +22,4 @@ def calculator(expression):
 
 
 if __name__ == '__main__':
-    print(calculator('2/0'))
+    print(calculator('2*1'))
