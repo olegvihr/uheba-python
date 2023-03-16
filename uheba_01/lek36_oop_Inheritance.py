@@ -35,6 +35,11 @@ class CEO(Employee):
         return 200_000
 
 
+def calc_bonuses(employees: list[Employee]):
+    for employee in employees:
+        print(f'Calc bonus for {employee.name}, it is = {employee.calculate_total_bonus()}')
+
+
 if __name__ == '__main__':
     masha = Cleaner('Maria Ivanovna')
     print(masha)
@@ -43,3 +48,5 @@ if __name__ == '__main__':
     print(grisha)
     ivan_palych = CEO('Ivav Pavlovych')
     print(ivan_palych)
+    a_list = [masha, grisha, ivan_palych]
+    calc_bonuses(a_list)
