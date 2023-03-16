@@ -1,0 +1,45 @@
+# Inheritance - наследование, это механизм доступа к данным и поведению своего предка И расширению (изменению поведения) классов не меняя код
+# IS-A является (наследование)
+# HAS-A содержит (композиция)
+
+
+class Employee:
+    def __init__(self, name, salary, bonus):
+        self.name = name
+        self.salary = salary
+        self.bonus = bonus
+
+    def calculate_total_bonus(self):
+        return self.salary // 100 * self.bonus
+
+    def __str__(self):
+        return f'{self.__class__.__name__} {self.name}, salaty={self.salary}, bonus={self.bonus}%, ' \
+               f'total bonus={self.calculate_total_bonus()} rub'
+
+
+class Cleaner(Employee):
+    def __init__(self, name):
+        super().__init__(name, 15000, 1)
+
+
+class Manager(Employee):
+    def __init__(self, name):
+        super().__init__(name, 45000, 15)
+
+
+class CEO(Employee):
+    def __init__(self, name):
+        super().__init__(name, 105000, 100)
+
+    def calculate_total_bonus(self):
+        return 200_000
+
+
+if __name__ == '__main__':
+    masha = Cleaner('Maria Ivanovna')
+    print(masha)
+    print(dir(masha))
+    grisha = Manager('Grigoriy Petrovich')
+    print(grisha)
+    ivan_palych = CEO('Ivav Pavlovych')
+    print(ivan_palych)
